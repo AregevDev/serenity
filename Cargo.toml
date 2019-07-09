@@ -63,6 +63,10 @@ version = "0.6"
 optional = true
 version = "0.15"
 
+[dependencies.oauth2]
+optional = true
+version ="3.0.0-alpha.3"
+
 [dependencies.sodiumoxide]
 default-features = false
 features = ["std"]
@@ -151,6 +155,7 @@ model = ["builder", "http"]
 standard_framework = ["framework", "uwl", "command_attr"]
 utils = ["base64"]
 voice = ["byteorder", "gateway", "audiopus", "rand", "sodiumoxide"]
+oauth = ["oauth2"]
 
 [package.metadata.docs.rs]
 all-features = true
